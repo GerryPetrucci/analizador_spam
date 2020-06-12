@@ -119,7 +119,7 @@ y_pred = mnb.predict(X_test)
 test_accuracy = accuracy_score(y_test, y_pred)
 print('Precisión en el conjunto de prueba: {}'.format(test_accuracy))
 
-#Matriz de confsión
+#Matriz de confusión
 print(pd.crosstab(y_test,y_pred,rownames=['True'],colnames=['Predicted'],margins=True))
 
 #Reporte de clasificación
